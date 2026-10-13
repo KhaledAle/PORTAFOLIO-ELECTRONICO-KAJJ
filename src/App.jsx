@@ -498,7 +498,7 @@ function SiteFooter() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <a className="skip-link" href="#main-content">Saltar al contenido</a>
       <div className="app-shell">
         <SiteHeader />
