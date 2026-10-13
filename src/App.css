@@ -277,23 +277,7 @@ h3 {
   object-fit: cover;
   object-position: center 28%;
   filter: drop-shadow(0 22px 50px rgba(0, 0, 0, 0.35));
-}
-
-.portrait-label {
-  position: absolute;
-  z-index: 2;
-  right: -4px;
-  bottom: 12%;
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  padding: 12px 15px;
-  color: var(--muted-strong);
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  background: #0d1b2c;
-  font-size: 11px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.24);
+  transform: translateY(-50px);
 }
 
 .quick-facts {
@@ -974,11 +958,6 @@ h3 {
     width: 285px;
   }
 
-  .portrait-label {
-    right: -12px;
-    font-size: 10px;
-  }
-
   .about-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1055,11 +1034,6 @@ h3 {
 
   .portrait {
     max-height: 290px;
-  }
-
-  .portrait-label {
-    right: -25px;
-    bottom: 8%;
   }
 
   .quick-facts {

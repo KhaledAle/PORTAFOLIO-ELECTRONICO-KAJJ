@@ -257,7 +257,6 @@ function HomePage() {
         <div className="portrait-wrap">
           <div className="portrait-orbit" />
           <img className="portrait" src={portrait} alt="Retrato de Khaled Alejandro Janampa Jaime" />
-          <div className="portrait-label"><span className="status-dot" /> Disponible para aprender y colaborar</div>
         </div>
       </section>
 
@@ -357,7 +356,7 @@ function ProjectsPage() {
     <div className="page-content">
       <section className="page-intro">
         <p className="eyebrow">TRABAJO EN EQUIPO · APRENDIZAJE CONTINUO</p>
-        <h1>Proyectos con intención.</h1>
+        <h1>Proyectos en mi repositorio de GitHub.</h1>
         <p>Prácticas colaborativas concluidas y repositorios propios que documentan mi recorrido en desarrollo web.</p>
         <ExternalLink className="button button-outline" href="https://github.com/KhaledAle">Abrir perfil de GitHub <span aria-hidden="true">↗</span></ExternalLink>
       </section>
@@ -491,7 +490,7 @@ function SiteFooter() {
   return (
     <footer className="site-footer">
       <Link className="brand" to="/"><span className="brand-mark">KJ</span><span>Khaled Janampa<span className="brand-subtitle">Desarrollo de Aplicaciones Web</span></span></Link>
-      <span>Hecho con curiosidad en Huancayo, Perú · 2026</span>
+      <span>Janampa Jaime Khaled Alejandro - Huancayo, Perú - 2026</span>
       <ExternalLink href="https://github.com/KhaledAle">GitHub ↗</ExternalLink>
     </footer>
   )
