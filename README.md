@@ -40,7 +40,7 @@ También se encuentran disponibles `npm run lint` para revisar el código y `npm
 
 ## Despliegue en GitHub Pages
 
-El proyecto incluye un flujo de GitHub Actions que construye y publica el sitio al enviar cambios a `main`. En GitHub, abre **Settings → Pages** y selecciona **GitHub Actions** como origen del despliegue. La URL del sitio de proyecto será `https://khaledale.github.io/PROTAFOLIO-ELECTRONICO-KAJJ/`.
+El proyecto incluye un flujo de GitHub Actions que construye y publica el sitio al enviar cambios a `main`. En GitHub, abre **Settings → Pages** y selecciona **GitHub Actions** como origen del despliegue. La URL del sitio de proyecto será `https://khaledale.github.io/PORTAFOLIO-ELECTRONICO-KAJJ/`.
 
 La configuración de Vite y la base de React Router deben coincidir con el nombre exacto del repositorio. Para probar la compilación localmente, ejecuta `npm run build`.
 
