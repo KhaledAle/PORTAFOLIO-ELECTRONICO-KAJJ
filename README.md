@@ -1,11 +1,11 @@
 # Portafolio electrónico — Khaled Alejandro Janampa Jaime
 
-Portafolio académico de **Desarrollo de Aplicaciones Web**, creado con React y Vite. Reúne la presentación personal, estudios, proyectos colaborativos, enlaces a repositorios públicos de GitHub y un cuaderno de aprendizaje organizado en seis semanas.
+Portafolio académico de **Desarrollo de Aplicaciones Web**, creado con React y Vite. Reúne la presentación personal, estudios, proyectos colaborativos, enlaces a repositorios públicos de GitHub y un cuaderno de aprendizaje organizado en siete semanas.
 
 ## Contenido del proyecto
 
 - **Inicio:** presentación personal, formación, tecnologías, contacto y experiencia (reservada para registrar información real).
-- **Proyectos:** cuatro repositorios colaborativos concluidos y consulta complementaria de los repositorios públicos de `KhaledAle` mediante la API de GitHub. Los proyectos colaborativos y sus enlaces directos permanecen visibles aunque la API no esté disponible.
+- **Proyectos:** cinco repositorios colaborativos concluidos y consulta complementaria de los repositorios públicos de `KhaledAle` mediante la API de GitHub. Los proyectos colaborativos y sus enlaces directos permanecen visibles aunque la API no esté disponible.
 - **Cuaderno:** índice y ficha individual de cada semana con resumen, conceptos clave, procedimiento, evidencia, reflexión semanal y fuentes.
 - **Evidencias PDF:** documentos incluidos en `src/assets/pdf/`; se muestran en un visor integrado y se pueden abrir en otra pestaña.
 - **Reflexión final:** sección reservada para completar una vez revisado el aprendizaje de todo el curso.
@@ -42,7 +42,7 @@ También se encuentran disponibles `npm run lint` para revisar el código y `npm
 
 El proyecto incluye un flujo de GitHub Actions que construye y publica el sitio al enviar cambios a `main`. En GitHub, abre **Settings → Pages** y selecciona **GitHub Actions** como origen del despliegue. La URL del sitio de proyecto será `https://khaledale.github.io/PORTAFOLIO-ELECTRONICO-KAJJ/`.
 
-La configuración de Vite y la base de React Router deben coincidir con el nombre exacto del repositorio. Para probar la compilación localmente, ejecuta `npm run build`.
+La configuración de Vite y la base de React Router deben coincidir con el nombre exacto del repositorio. La compilación genera un `404.html` con la aplicación para que las rutas internas también funcionen al abrirlas directamente o recargarlas. Para probar la compilación localmente, ejecuta `npm run build`.
 
 ## Navegación
 
@@ -50,11 +50,11 @@ La configuración de Vite y la base de React Router deben coincidir con el nombr
 | --- | --- |
 | `/` | Portada, perfil, estudios y experiencia |
 | `/proyectos` | Proyectos colaborativos y repositorios públicos |
-| `/cuaderno` | Índice de las seis semanas |
-| `/cuaderno/semana-1` a `/cuaderno/semana-6` | Ficha, evidencias y PDF de cada semana |
+| `/cuaderno` | Índice de las siete semanas |
+| `/cuaderno/semana-1` a `/cuaderno/semana-7` | Ficha, evidencias y PDF de cada semana |
 | `/reflexion-final` | Sección reservada |
 
-El proyecto utiliza `BrowserRouter`. En un hosting estático, habilita la regla de fallback para que las rutas de la aplicación respondan con `index.html`; de lo contrario, una recarga directa en una ruta interna podría producir un 404.
+El proyecto utiliza `BrowserRouter` con las rutas indicadas. El `404.html` generado durante la compilación entrega la aplicación de React en rutas internas de GitHub Pages.
 
 ## Organización principal
 
@@ -65,6 +65,9 @@ El proyecto utiliza `BrowserRouter`. En un hosting estático, habilita la regla 
 │   ├── assets/
 │   │   ├── Fotocarnet.webp
 │   │   └── pdf/
+│   ├── components/
+│   ├── data/
+│   ├── pages/
 │   ├── App.jsx
 │   ├── App.css
 │   ├── index.css
@@ -79,6 +82,7 @@ El proyecto utiliza `BrowserRouter`. En un hosting estático, habilita la regla 
 - [Pr-cticaCalificada02](https://github.com/AGIDNSNF/Pr-cticaCalificada02)
 - [SEMANA_2-MDAW](https://github.com/saulPariona/SEMANA_2-MDAW)
 - [SEMANA_3_DAW_SUAZNABAR](https://github.com/saulPariona/SEMANA_3_DAW_SUAZNABAR)
+- [PROYECTO-PARCIAL-](https://github.com/saulPariona/PROYECTO_PARCIAL-)
 
 Perfil público: [github.com/KhaledAle](https://github.com/KhaledAle). La consulta de repositorios no requiere token; no se incluyen credenciales privadas en el frontend.
 
@@ -134,6 +138,12 @@ Perfil público: [github.com/KhaledAle](https://github.com/KhaledAle). La consul
 - **[B31]** [MDN — Promesas](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
 - **[B32]** [GitHub Docs — REST API de repositorios](https://docs.github.com/en/rest/repos/repos#list-repositories-for-a-user)
 - **[B33]** [Axios — Documentación](https://axios-http.com/docs/intro)
+- **[B34]** [React — Built-in React Hooks](https://react.dev/reference/react/hooks)
+- **[B35]** [React — useState](https://react.dev/reference/react/useState)
+- **[B36]** [React — useEffect](https://react.dev/reference/react/useEffect)
+- **[B37]** [React — useContext](https://react.dev/reference/react/useContext)
+- **[B38]** [React — Reusing Logic with Custom Hooks](https://react.dev/learn/reusing-logic-with-custom-hooks)
+- **[B39]** [React — Rules of Hooks](https://react.dev/reference/rules/rules-of-hooks)
 
 ## Evidencias y contenido
 
